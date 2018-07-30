@@ -1,0 +1,104 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: lightblue;
+}
+
+.todos-container{
+    background-color: lightcoral;
+    position: absolute;
+    /*nos posicionamos en el centro del navegador*/
+    top:0;
+    left:30%; 
+    /*determinamos una anchura*/
+    width:400px;
+    /*indicamos que el margen izquierdo, es la mitad de la anchura*/
+    /* margin-left:-200px; */
+    /*determinamos una altura*/
+    height:100vh;
+    /*indicamos que el margen superior, es la mitad de la altura*/
+    /* margin-top:-150px; */
+    border:2px solid gray;
+    padding:5px; 
+
+    
+}
+
+.container{
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+}
+
+.todo-title{
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    font-size: 50px;
+}
+
+.todos-input-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.todos-list-container{
+    display: flex;
+    justify-content: space-around;
+  
+    padding: 20px 10px;
+}
+
+.show-todos{
+  background-image: linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -o-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, rgb(210,244,254)),
+	color-stop(1, rgb(149,194,253))
+);
+	border: solid 1px rgba(0, 0, 0, 0.5);
+	/* vendor rules */
+	border-radius: 20px;
+	/* vendor rules */
+	box-shadow: inset 0 5px 5px rgba(255, 255, 255, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+	/* vendor rules */
+	box-sizing: border-box;
+	clear: both;
+	float: left;
+	margin-bottom: 20px;
+	padding: 8px 30px;
+	position: relative;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+	width: auto;
+	max-width: 100%;
+	word-wrap: break-word;
+}
+
+/* codigo de frank */
+
+.todo{
+    display: flex;
+}
+
+
+
+#new-todo-input{
+    background-color:lightskyblue;
+    color: white;
+    border: 2px blue;
+    border-radius: 4px;
+}
+
+button{
+    background-color:lightskyblue;
+    color: white;
+    border: 2px blue;
+    border-radius: 4px;
+}
